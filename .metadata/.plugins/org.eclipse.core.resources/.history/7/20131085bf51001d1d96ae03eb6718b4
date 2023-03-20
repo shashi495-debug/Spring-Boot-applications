@@ -1,0 +1,25 @@
+package com.example.demo.controller;
+import com.example.demo.entity.*;
+
+import org.hibernate.metamodel.model.domain.internal.AbstractAttribute;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+
+@Controller
+public class indexcontroller {
+	@GetMapping("/reg")
+String index11() {
+		return"registration";
+		
+	}
+	@GetMapping("/if")
+	String fox22() {
+		return "login";
+//	}
+	//public String userconfig(AbstractAttribute user useri,Model modeli) {
+		
+	//	System.out.println(useri.toString);
+
+	}
+	
+}

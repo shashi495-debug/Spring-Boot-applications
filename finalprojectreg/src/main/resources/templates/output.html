@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+  <h1 ALIGN="CENTER"><I>DASHBOARD</I></h1>
+</head>
+<style>
+  table,th,td{
+  border:double;
+  font-color:yellow;
+  align:center;
+
+  }
+
+</style>
+<body align="center">
+<form action="admin" method="post">
+<TABLE ALIGN="CENTER">
+  <TR><TH colspan="20">DETAILS</TH></TR>
+  <TR>
+    <TH>ID</TH><TD COLspan=2>213154</TD><TH>FULL NAME</TH><TD colspan="2"><p th:text="${firstname}">firstname</p></TD> <TH>GENDER:</TH><TD><p th:text="${gender}">gender</p></TD>
+  </TR>
+  <TR>
+    <TH>FATHERNAME:</TH><TD colspan="2"><p th:text="${fathername}">fathername</p></TD><TH>USERNAME</TH><TD colspan="2"><p th:text="${Unamer}">Unamer</p></TD><TH>MOBILE:</TH><TD><p th:text="${number}">number</p></TD>
+  </TR>
+  <TR>
+    <TH>Aadhar Number</TH><TD colspan="2"><p th:text="${lastname}">lastname</p></TD><TH>STATE</TH><TD colspan="2"><p th:text="${state1}">state1</p></TD>
+  <th>DATE OF BIRTH:</th><TD><P TH:TEXT="${dateofbirth}">dateofbirth</P></TD>
+  </TR>
+  <tr><th>Address</th><td colspan="15"><p th:text="${address}">address</p></td></tr>
+</TABLE>
+<br>
+<br>
+<table align="center">
+  <tr>
+    <th colspan="10">OFFICAL DETAILS</th>
+  </tr>
+  <tr>
+    <th>ADMIN ID</th><td COLSPAN="2" ><input type="radio" name="ad" onclick="myfunction()"></td><th>CLIENT ID</th><td COLSPAN="2"><input type="radio" name="cli"></td><th>EMPLOYEE ID</th><td COLSPAN="2"><input type="radio" name="emp"></td>
+
+  </tr>
+</table>
+  <p id="demo"></p>
+  <script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = "<input type=text>";
+}
+
+</script>
+
+  <br>
+  <br>
+<input type="submit" value="Submit"> <button onclick="window.close()">close</button>
+</form>
+<br>
+<br>
+<button onclick="window.print()">Print</button>
+</body>
+</html>

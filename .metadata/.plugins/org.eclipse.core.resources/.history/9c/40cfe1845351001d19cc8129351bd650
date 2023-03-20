@@ -1,0 +1,17 @@
+package com.example.demo.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+
+@Controller
+public class indexcontroller {
+	@GetMapping("/reg")
+String index11() {
+		return"registration";
+		
+	}
+	@GetMapping("/if")
+	String fox22() {
+		return "login";
+	}
+}

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DatabaseMigrationSettings">
+    <database-infos>
+      <database-info>
+        <dbms-id>mysql</dbms-id>
+        <mapping-types>
+          <mapping-type sql-type-parameter="Precision and Scale">
+            <java-class>java.lang.String</java-class>
+            <sql-type>double</sql-type>
+          </mapping-type>
+        </mapping-types>
+      </database-info>
+    </database-infos>
+    <pkConstraintName name="pkConstraintName" />
+  </component>
+  <component name="JpaLiquibaseChangesConfig">
+    <liquibase-change category="Column" state="SAFE" location="MAIN_CHANGE_LOG" name="dropColumn" />
+    <liquibase-change category="Column" state="SAFE" location="MAIN_CHANGE_LOG" name="modifyDataType" />
+    <liquibase-change category="Sequence" state="SAFE" location="MAIN_CHANGE_LOG" name="dropSequence" />
+  </component>
+</project>

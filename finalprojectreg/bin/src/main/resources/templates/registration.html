@@ -1,0 +1,104 @@
+<html>
+<head>
+  <title>REGISTRATION</title>
+</head>
+<body>
+<form method="post" action="if">
+  <table border="1" align="center" width="400" bgcolor="#CCCCCC" >
+    <caption><h1><i>Registor Form</i></h1></caption>
+    <tr>
+      <th>First Name</th>
+      <td><input type="text" name="fname" id="fn1" minlength="5" maxlength="20" title="enter your first name" placeholder="enter your first name" required /></td>
+    </tr>
+    <tr>
+      <th>AADHAR NUMBER</th>
+      <td><input type="text" name="lname" placeholder="surname" required/></td>
+    </tr>
+    <tr>
+      <th>Password</th>
+      <td><input type="password" name="pwd" placeholder="min 5-10 char" required/></td>
+    </tr>
+    <tr>
+      <th>Gender</th>
+      <td>Male<input type="radio" name="gender" value="Male"/> Female <input type="radio" name="gender" value="Female"></td>
+    </tr>
+    <tr>
+      <th>Father Name</th>
+      <td><input type="text" name="fatname" required /></td>
+    </tr>
+    <tr>
+      <th>Mobile</th>
+      <td><input type="number" name="num" /></td>
+    </tr>
+    <tr>
+      <th>Enter your address</th>
+      <td><textarea rows="8" cols="20" name="addr" required></textarea></td>
+    </tr>
+    <tr>
+      <th>UserName</th>
+      <td>
+        <input type="text" name="uname" required></td>
+    </tr>
+    <tr>
+      <th>Select your Department</th>
+      <td >
+        Employee<input type="radio" name="dept" value="emp"/>
+        Client<input type="radio" name="dept" value="cli"/>
+        Admin<input type="radio" name="dept" value="ad"/>
+         <input type="text" selected="nil" colspan="2">
+      </td>
+    </tr>
+    <tr>
+      <th>Select your DOB</th>
+      <td><input type="date" name="dob" /></td>
+    </tr>
+    <tr>
+      <th>State</th>
+      <td>
+        <select name="state">
+          <option value="" selected="selected" disabled="disabled">Select your state</option>
+          <option value="AP">Andhra pradesh</option>
+          <option value="ARUNACHAL PRADESH">Arunachal Pradesh</option>
+          <option value="ASSAM">Assam</option>
+          <option value="BIHAR">Bihar</option>
+          <option value="CHGARH">Chhattisgarh</option>
+          <option value="GOA">Goa</option>
+          <option value="GUJARAT">Gujarat</option>
+          <option value="HARYANA">Haryana</option>
+          <option value="HP">Himachal Pradesh</option>
+          <option value="JHD">Jharkhand</option>
+          <option value="KARNATAKA">Karnataka</option>
+          <option value="KERALA">Kerala</option>
+          <option value="MP">Madhya Pradesh</option>
+          <option value="MAHARASTRA">Maharashtra</option>
+          <option value="MANIPUR">Manipur</option>
+          <option value="MEGHALAYA">Meghalaya</option>
+          <option value="MIZORAM">Mizoram</option>
+          <option value="NAGALAND">Nagaland</option>
+          <option value="ODISHA">Odisha</option>
+          <option value="PUNJAB">Punjab</option>
+          <option value="RAJASTHAN">Rajasthan</option>
+          <option value="SIKKIM">Sikkim</option>
+          <option value="TN">Tamil Nadu</option>
+          <option value="తెలంగాణ">Telangana</option>
+          <option value="NOT VALID">Tripura</option>
+          <option value="UP">Uttar Pradesh</option>
+          <option value="UKD">Uttarakhand</option>
+          <option value="WB">West Bengal</option>
+
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <th>Upload your pic</th>
+      <td><input type="file"/></td>
+    </tr>
+    <tr>
+      <td colspan="2" align="center"><input type="submit" value="Submit"/>
+        <input type="reset" value="Reset Data"/>
+      </td>
+    </tr>
+  </table>
+</form>
+</body>
+</html>
